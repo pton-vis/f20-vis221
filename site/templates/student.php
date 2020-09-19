@@ -1,7 +1,7 @@
 <?php snippet('header'); ?>
   <div class="layout-wrapper--contained">
     <div class="student__title" style="--color: <?php printf( "#%06X\n", mt_rand( 0, 0xFFFFFF )); ?>;">
-      <?= $page->title() ?>
+      <a href="<?= $site->url(); ?>">&#8668;&nbsp;<?= $page->title() ?></a>
     </div>
     <div class="text">
       <?= $page->main_content()->kt(); ?>

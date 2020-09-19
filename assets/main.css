@@ -124,6 +124,10 @@ a:hover {
   color: var(--color);
 }
 
+.student__title a {
+  text-decoration: none;
+}
+
 .student__work {
   margin-top: calc(2 * var(--margin));
   max-width: 500px;
