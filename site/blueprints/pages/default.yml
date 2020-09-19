@@ -1,0 +1,8 @@
+title: Default Page
+preset: page
+fields:
+  main_content:
+    label: Text
+    type: textarea
+    size: large
+

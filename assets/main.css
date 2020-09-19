@@ -1,0 +1,152 @@
+:root {
+  --font-size: 1.8rem;
+  --font-size--mobile: 1.6rem;
+  --line-height: 1.22;
+
+  --margin: 2.5rem;
+  --margin--mobile: 1.25rem;
+
+  --font-family: 'Arial', sans-serif;
+}
+
+/* RESET/GLOBAL */
+*,
+*:after,
+*:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+ul {
+  list-style-type: none;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
+a:hover {
+  /* text-decoration: none; */
+}
+
+/* KirbyText */
+.text {
+}
+
+.text p,
+.text figure,
+.text ul,
+.text ol, p {
+  margin-bottom: 1em;
+}
+
+.text li, .text li p {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+.text hr {
+  display: none;
+}
+
+.text > *:first-child {
+  margin-top: 0;
+}
+
+.text a {
+  text-decoration: underline;
+}
+
+.text img {
+  display: block;
+  width: 100%;
+}
+
+.text iframe {
+  border: none;
+}
+
+
+/* Layout */
+.layout-wrapper {
+  margin: var(--margin);
+}
+
+.layout-wrapper--contained {
+  margin: var(--margin);
+  max-width: 700px;
+}
+
+/* Home */
+.student__list {
+  margin-top: 2em;
+}
+
+.student__list__item {
+  font-weight: bold;
+}
+
+.student__list__item a {
+  text-decoration: none;
+}
+
+.student__list__item a:hover {
+  color: var(--hover-color, #fff);
+}
+
+
+/* Student Page */
+.student__title {
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: var(--color);
+}
+
+.student__work {
+  margin-top: calc(2 * var(--margin));
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.student__work__item {
+  margin-bottom: 2em;
+}
+
+.student__work__item__upload video, .student__work__item__upload img {
+  width: 100%;
+  height: auto;
+}
+
+.student__work__item__upload audio {
+  width: 100%;
+}
+
+.student__work__item__text:not(:only-child) {
+  margin-top: 0.5em;
+}

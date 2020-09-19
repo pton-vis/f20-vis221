@@ -1,0 +1,38 @@
+title: Student
+icon: template
+preset: page
+
+fields:
+  main_works:
+    label: Works
+    type: structure
+    fields:
+      type_of_work:
+        label: Type of Work
+        type: radio
+        default: upload
+        options:
+          text: Text
+          # embed: Video Embed
+          upload: File Upload (image, document, video, audio)
+      # work_embed:
+      #   label: Video Embed URL
+      #   type: text
+      #   help: Youtube or Vimeo URL
+      #   when:
+      #     type_of_work: embed
+      work_upload:
+        label: File Upload
+        type: files
+        max: 1
+        layout: cards
+        when:
+          type_of_work: upload
+      work_text:
+        label: Text / Caption
+        type: textarea
+        size: small
+  main_content:
+    label: Statement
+    type: textarea
+    size: medium
