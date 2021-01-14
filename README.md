@@ -1,1 +1,1 @@
-# VIS221 – F20, Amy Yao
+# VIS221 (F20, S21), VIS22 (S21) — Amy Yao
